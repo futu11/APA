@@ -1,4 +1,7 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
+
 using namespace std;
 
 
@@ -49,13 +52,21 @@ void printArray(int arr[], int n)
 
 int main()
 {
-    int arr[] = {22, 122, 66, 6, 1, 76, 32, 12, 55, 22, 2};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    cout << "\nArray antes do Sorting: \n";
-    printArray(arr, n);
+    ifstream input("couting.txt");
+    if (input.is_open()) {
+        int n;
+        input >> n;
+        int array[n];
+        for (int i=0; i<n; i++) {
+            input >> array[i];
+        }
 
-    heapSort(arr, n);
+    cout << "\nArray antes do Sorting: \n";
+    printArray(array, n);
+
+    heapSort(array, n);
 
     cout << "\nArray depois do Sorting: \n";
-    printArray(arr, n);
+    printArray(array, n);
+    }
 }
