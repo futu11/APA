@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1536085561 source:c:\users\win\documents\ed\projeto_final\radixsort\radixsort.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
