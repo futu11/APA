@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1537879064 source:c:\users\win\documents\apa\gulosos\prim\prim.c
+	<stdio.h>
+	<limits.h>
+
